@@ -38,11 +38,32 @@ body {
 .phone-decor-coral {
   top: -14px;
   right: -34px;
+  transform-origin: top center;
+  animation: phone-sway 4.5s ease-in-out infinite;
 }
 
 .phone-decor-purple {
   bottom: -14px;
   left: -66px;
+  transform-origin: bottom center;
+  animation: phone-sway 5.5s ease-in-out infinite;
+  animation-delay: -1.5s;
+}
+
+@keyframes phone-sway {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phone-decor-coral,
+  .phone-decor-purple {
+    animation: none;
+  }
 }
 
 @media (max-width: 700px) {
