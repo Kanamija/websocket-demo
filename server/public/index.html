@@ -11,33 +11,16 @@
 </head>
 <body>
   <div class="app">
-    <svg class="cord cord-top" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M4 6 C 60 6, 40 60, 100 46 C 125 40, 132 60, 156 68"
-            stroke="var(--coral)" stroke-width="3" stroke-linecap="round" fill="none"/>
-    </svg>
-    <div class="phone-badge phone-badge-top">
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--coral)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
-      </svg>
-    </div>
-
-    <svg class="cord cord-bottom" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M4 40 C 26 34, 20 12, 60 18 C 100 24, 84 62, 156 78"
-            stroke="var(--purple)" stroke-width="3" stroke-linecap="round" fill="none"/>
-    </svg>
-    <div class="phone-badge phone-badge-bottom">
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
-      </svg>
-    </div>
-
     <h1><span class="title-coral">Chat</span><span class="title-purple">Room</span></h1>
     <div class="title-divider">
       <span class="line coral"></span>
-      <span class="dot"></span>
       <span class="line purple"></span>
     </div>
-    <div id="messages"></div>
+    <div class="messages-wrap">
+      <img class="phone-decor phone-decor-coral" src="images/handset-coral.png" alt="" aria-hidden="true">
+      <div id="messages"></div>
+      <img class="phone-decor phone-decor-purple" src="images/phone-purple.png" alt="" aria-hidden="true">
+    </div>
     <form id="messageForm">
       <input id="nameInput" type="text" placeholder="Your name" required>
       <input id="textInput" type="text" placeholder="Message" required>

@@ -26,58 +26,42 @@ body {
   overflow: hidden;
 }
 
-.cord {
+.phone-decor {
   position: absolute;
-  width: 150px;
-  height: auto;
+  height: clamp(220px, 48vh, 400px);
+  width: auto;
+  object-fit: contain;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
-.cord-top {
-  top: 30px;
-  right: -130px;
+.phone-decor-coral {
+  top: -14px;
+  right: -34px;
 }
 
-.cord-bottom {
-  bottom: 90px;
-  left: -130px;
-  transform: scaleX(-1);
-}
-
-.phone-badge {
-  position: absolute;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--surface);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-}
-
-.phone-badge svg {
-  width: 24px;
-  height: 24px;
-}
-
-.phone-badge-top {
-  top: 10px;
-  right: -70px;
-}
-
-.phone-badge-bottom {
-  bottom: 68px;
-  left: -70px;
-  transform: rotate(180deg);
+.phone-decor-purple {
+  bottom: -14px;
+  left: -66px;
 }
 
 @media (max-width: 700px) {
-  .cord,
-  .phone-badge {
-    display: none;
+  body {
+    padding: 16px 48px;
+  }
+
+  .phone-decor {
+    height: clamp(140px, 32vh, 250px);
+  }
+
+  .phone-decor-coral {
+    top: -8px;
+    right: -18px;
+  }
+
+  .phone-decor-purple {
+    bottom: -8px;
+    left: -30px;
   }
 }
 
@@ -135,12 +119,12 @@ body {
   background: var(--purple);
 }
 
-.title-divider .dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--text);
-  opacity: 0.4;
+.messages-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #messages {
