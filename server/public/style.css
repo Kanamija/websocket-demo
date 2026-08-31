@@ -51,17 +51,17 @@ body {
   }
 
   .phone-decor {
-    height: clamp(149px, 34vh, 266px);
+    height: clamp(186px, 42vh, 332px);
   }
 
   .phone-decor-coral {
     top: -8px;
-    right: -18px;
+    right: -23px;
   }
 
   .phone-decor-purple {
     bottom: -8px;
-    left: -30px;
+    left: -38px;
   }
 }
 
