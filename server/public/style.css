@@ -28,7 +28,7 @@ body {
 
 .phone-decor {
   position: absolute;
-  height: clamp(275px, 60vh, 500px);
+  height: clamp(234px, 51vh, 425px);
   width: auto;
   object-fit: contain;
   pointer-events: none;
@@ -51,7 +51,7 @@ body {
   }
 
   .phone-decor {
-    height: clamp(175px, 40vh, 313px);
+    height: clamp(149px, 34vh, 266px);
   }
 
   .phone-decor-coral {
